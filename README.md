@@ -1,2 +1,2 @@
 # download-all-docs
-Chrome Extension to download all documents of the selected formats on the current page
+Download all Docs is a Chrome extension that downloads all documents on the page with a single click. Pick which formats you want to download (PDF, Word, PowerPoint, etc.) in the popup page. Useful for college or school course websites.

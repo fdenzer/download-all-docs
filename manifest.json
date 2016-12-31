@@ -1,0 +1,33 @@
+
+{
+  "manifest_version": 2,
+
+  "name": "Download All Docs",
+  "version": "0.0.2",
+  "minimum_chrome_version": "26.0",
+  "description": "Downloads all documents on the page with a single click",
+
+  "browser_action": {
+    "default_icon": "img/icon128.png",
+    "default_popup": "popup.html",
+    "default_title": "Download All Docs"
+  },
+
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "contextMenus",
+    "downloads",
+    "storage"
+  ],
+
+  "icons": { 
+    "16": "img/icon16.png",
+    "48": "img/icon48.png",
+    "128": "img/icon128.png" 
+  }
+}
