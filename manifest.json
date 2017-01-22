@@ -3,8 +3,8 @@
   "manifest_version": 2,
 
   "name": "Download All Docs",
-  "version": "0.0.2",
-  "minimum_chrome_version": "26.0",
+  "version": "1.0.0",
+  "minimum_chrome_version": "32.0",
   "description": "Downloads all documents on the page with a single click",
 
   "browser_action": {
@@ -14,7 +14,15 @@
   },
 
   "background": {
-    "scripts": ["js/background.js"]
+    "scripts": [
+                  "js/background.js",
+                  "js/zip.js",
+                  "js/zip-fs.js",
+                  "js/zip-ext.js",
+                  "js/z-worker.js",
+                  "js/inflate.js",
+                  "js/deflate.js"
+               ]
   },
 
   "permissions": [
@@ -22,7 +30,9 @@
     "tabs",
     "contextMenus",
     "downloads",
-    "storage"
+    "storage",
+    "http://*/",
+    "https://*/"
   ],
 
   "icons": { 
